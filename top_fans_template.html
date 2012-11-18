@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.2.1/css/bootstrap-combined.min.css" rel="stylesheet">
+	<script src="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.2.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+	
+	<div class="hero-unit">
+		<h1>Top Instagram users for <em>{{ campaign }}</em> campaign</h1>
+		<p>Total users {{ total_users }}</p>
+	</div>
+
+	{% for user in top_users %}
+	<div class="well clearfix">
+
+		<div class="span2">
+			<img src="{{ user['profile_picture'] }}" class="pull-left" >
+		</div>
+
+		<div class="offset2">
+			<h2>{{ user['full_name'] }}</h2>
+			<h3><a href="http://instagram.com/{{ user['username'] }}">{{ user['username'] }}</a></h3>
+			<ul>
+				{% for item in user.stats|dictsort(false, 'value')|reverse %}
+					<li>{{ item[0]|capitalize }} {{ item[1] }}</li>
+				{% endfor %}
+			</ul>
+		</div>
+	</div>
+	{% endfor %}
+
+</body>
+
+</html>
