@@ -1,6 +1,15 @@
 Quick and dirty Instagram campaign tracker
 ==========================================
 
+
+Code to accompany my [Instagram campaing reporting part 2](See my [Instagram campaing reporting blog post](http://ollieglass.com/2012/11/05/instagram-campaign-reporting) blog post. Download data from an Instagram hashtag campaign, analyse and produce an engagement report.
+
+Example [Urban Outfitters campaign report](http://dl.dropbox.com/u/19419/instagram_campaign_reporting/report.html).
+
+
+Instructions for the old version
+--------------------------------
+
 See my [Instagram campaing reporting blog post](http://ollieglass.com/2012/11/05/instagram-campaign-reporting) for details
 
 To use:
