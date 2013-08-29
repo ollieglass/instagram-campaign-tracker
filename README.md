@@ -14,7 +14,7 @@ See my [Instagram campaing reporting blog post](http://ollieglass.com/2012/11/05
 
 To use:
 
-1. Login to the Instagram API console, copy the access token.
+1. Login to the [Instagram API console](https://apigee.com/console/instagram), copy the access token.
 2. In download_data.py:
   * Paste your access token into the access_token variable
   * Change the hashtag variable to whatever you're intested in.
